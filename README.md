@@ -1,13 +1,11 @@
-# Paytm Clone Backend
+# Paytm Clone
 
-This is the backend for a Paytm clone application. It includes user authentication, balance retrieval, and money transfer features.
+This repository contains both the frontend and backend for a Paytm clone application. The backend is built with Node.js, Express, and MongoDB, while the frontend is developed with React.
 
 ## Tech Stack
 
-- **Node.js**
-- **Express**
-- **MongoDB**
-- **React**
+- **Backend**: Node.js, Express, MongoDB
+- **Frontend**: React
 
 ## Features
 
@@ -15,3 +13,15 @@ This is the backend for a Paytm clone application. It includes user authenticati
 - **Signin**: Authenticate users and issue tokens.
 - **Fetch Balance**: Retrieve user balance.
 - **Transfer Money**: Send money between users.
+
+## Installation
+- Prerequisites
+  - Node.js installed on your machine.
+  - MongoDB for the database.
+
+- Clone the Repository
+```bash
+git clone https://github.com/paras-verma7454/Paytm.git
+cd Paytm
+
+
