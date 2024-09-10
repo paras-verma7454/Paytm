@@ -12,29 +12,6 @@ export const Signin = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  // const handleSignin = async () => {
-  //   try {
-  //     const response = await axios.post("http://localhost:3000/api/v1/user/signin", {
-  //       username,
-  //       password
-  //     });
-
-  //     // Store the token in localStorage
-  //     localStorage.setItem("token", response.data.token);
-
-  //     // Navigate to the dashboard
-  //     navigate("/dashboard");
-  //   } catch (error) {
-  //     // Handle error response from server
-  //     if (error.response && error.response.status === 411) {
-  //       console.error("Sign-in failed: Incorrect inputs or credentials", error.response.data.message);
-  //       // Optionally, show an error message to the user
-  //     } else {
-  //       console.error("Sign-in failed", error);
-  //       // Handle other potential errors (e.g., network issues)
-  //     }
-  //   }
-  // };
 
   return (
     <div className="bg-slate-300 h-screen flex justify-center">
