@@ -7,6 +7,7 @@ export const SendMoney = () => {
     const id = searchParams.get("id");
     const name = searchParams.get("name");
     const [amount, setAmount] = useState(0);
+    const [Message,setMessage] = useState("");
 
     return <div class="flex justify-center h-screen bg-gray-100">
         <div className="h-full flex flex-col justify-center">
@@ -15,6 +16,7 @@ export const SendMoney = () => {
             >
                 <div class="flex flex-col space-y-1.5 p-6">
                 <h2 class="text-3xl font-bold text-center">Send Money</h2>
+                <p className='text-center'>{Message}</p>
                 </div>
                 <div class="p-6">
                 <div class="flex items-center space-x-4">
@@ -49,7 +51,10 @@ export const SendMoney = () => {
                             headers: {
                                 Authorization: "Bearer " + localStorage.getItem("token")
                             }
-                        })
+                        }).then((response) => {setMessage(response.data.message)})
+                        .catch(error => {
+                            // Handle errors
+                            setMessage(error.response.data.message)})
                     }} class="justify-center rounded-md text-sm font-medium ring-offset-background transition-colors h-10 px-4 py-2 w-full bg-green-500 text-white">
                         Initiate Transfer
                     </button>
