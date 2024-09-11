@@ -21,16 +21,16 @@ export const Signup = () => {
         <SubHeading label={"Enter your infromation to create an account"} />
         <InputBox onChange={e => {
           setFirstName(e.target.value);
-        }} placeholder="John" label={"First Name"} />
+        }} placeholder="Paras" label={"First Name"} />
         <InputBox onChange={(e) => {
           setLastName(e.target.value);
-        }} placeholder="Doe" label={"Last Name"} />
+        }} placeholder="Verma" label={"Last Name"} />
         <InputBox onChange={e => {
           setUsername(e.target.value);
-        }} placeholder="harkirat@gmail.com" label={"Email"} />
+        }} placeholder="Paras@gmail.com" label={"Email"} />
         <InputBox onChange={(e) => {
           setPassword(e.target.value)
-        }} placeholder="123456" label={"Password"} />
+        }} placeholder="123456789" label={"Password"} />
         <div className="pt-4">
           <Button onClick={async () => {
             const response = await axios.post("https://paytm-ym3c.onrender.com/api/v1/user/signup", {
