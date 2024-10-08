@@ -2,7 +2,7 @@
 
 This repository contains both the frontend and backend for a Paytm clone application. The backend is built with Node.js, Express, and MongoDB, while the frontend is developed with React.
 
-Note:
+## Note:
 ```bash
 The backend might be slow for up to 50 seconds for the first req, because of the free instance.
 ```
