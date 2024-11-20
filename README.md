@@ -2,11 +2,22 @@
 
 This repository contains both the frontend and backend for a Paytm clone application. The backend is built with Node.js, Express, and MongoDB, while the frontend is developed with React.
 
+
+
 ## Tech Stack
 
 - **Backend**: Node.js, Express, MongoDB
 - **Frontend**: React
 - **Authentication**: JWT (JSON Web Tokens)
+
+
+**Preview**: https://paytm-livid.vercel.app/
+> **Note**: The backend may be slow for the first request due to the use of a free hosting instance. Subsequent requests should be faster.
+
+![Screenshot 2024-09-14 120802](https://github.com/user-attachments/assets/cd4dc0dc-2258-4cc7-917d-6ca3d7caffc4)
+![Screenshot 2024-09-14 121439](https://github.com/user-attachments/assets/d0559ff0-546c-4688-81c5-6b9375826d81)
+![image](https://github.com/user-attachments/assets/6d6ce386-b3d3-4752-9726-017e9a31db49)
+
 
 ## Features
 
@@ -14,6 +25,7 @@ This repository contains both the frontend and backend for a Paytm clone applica
 - **Signin**: Authenticate users and issue tokens.
 - **Fetch Balance**: Retrieve user balance.
 - **Transfer Money**: Send money between users.
+
 
 ## Contributions
 
