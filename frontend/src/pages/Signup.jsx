@@ -13,6 +13,7 @@ export const Signup = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
+    axios.get("https://paytm-ym3c.onrender.com")
 
     return <div className="bg-slate-300 h-screen flex justify-center">
     <div className="flex flex-col justify-center">
